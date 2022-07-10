@@ -87,6 +87,7 @@
     margin-left: 5px;
     margin-top: 20px;
     background-color: var(--main-color);
+    cursor: pointer;
 }
 .social-media div.instagram-media {
     background: url("../_img/instagram.png") no-repeat scroll 6px 6px;
@@ -245,7 +246,7 @@
 .middle-page {
     display: flex;
     width: fill;
-    height: 600px;
+    height: 500px;
     margin: 0px -8px;
 }
 .middle-page div.esq-bar {
@@ -332,10 +333,10 @@
 /* ESTILO DO BAIXO DA PÁGINA */
 .bottom-page {
     width: fill;
-    height: 2000px;
+    height: 1300px;
     margin-left: 50px;
 }
-.bottom-page h1 {
+.bottom-page h1.bottom-title {
     font-family: 'Barlow Condensed';
     font-size: 40px;
     font-weight: 800pt;
@@ -345,15 +346,13 @@
 .bottom-page div.separador {
     width: 150px;
     height: 8px;
-    margin-top: 0px;
-    margin-bottom: 50px;
+    margin: 10px 0px 50px 20px;
     background-color: var(--secu-color);
 }
 .bottom-page p {
     font-family: 'Roboto';
     font-size: 20px;
-    margin-right: 55%;
-    margin-bottom: 50px;
+    margin: 10px 55% 50px 20px;
     font-weight: 800;
     color: var(--secu-color);
 }
@@ -366,7 +365,42 @@
     width: 600px;
     height: 300px;
 }
+
 .bottom-page div.hover-1 {
+    opacity: 0;
+    position: absolute;
+    margin: 0px;
+    width: 600px;
+    height: 300px;
+    cursor: pointer;
+}
+.bottom-page div.hover-2 {
+    opacity: 0;
+    position: absolute;
+    right: 14px;
+    margin: 0px;
+    width: 600px;
+    height: 300px;
+    cursor: pointer;
+}
+.bottom-page div.hover-3 {
+    opacity: 0;
+    position: absolute;
+    margin: 338px 0px 0px 0px;
+    width: 600px;
+    height: 300px;
+    cursor: pointer;
+}
+.bottom-page div.hover-4 {
+    opacity: 0;
+    position: absolute;
+    margin: 338px 0px 0px 638px;
+    width: 600px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.bottom-page div.background {
     position: absolute;
     margin: 0px;
     width: 600px;
@@ -374,13 +408,15 @@
     background-color: var(--menu-color);
     opacity: .8;
 }
-.bottom-page div.hover-1 h1 {
+.bottom-page h1 {
+    position: relative;
     color: var(--secu-color);
     font-family: 'Barlow Condensed';
     font-weight: 100;
     margin: 200px 0px 0px 20px;
+    z-index: 1;
 }
-.bottom-page div.hover-1 h2 {
+.bottom-page h2 {
     position: relative;
     color: white;
     font-size: 17px;
@@ -388,4 +424,48 @@
     font-weight: 500;
     margin-top: 5px;
     margin-left: 20px;
+}
+
+.bottom-page div.hover-1:hover {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+.bottom-page div.hover-2:hover {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+.bottom-page div.hover-3:hover {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+.bottom-page div.hover-4:hover {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.bottom-page div.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.bottom-page button {
+    width: 165px;
+    height: 30px;
+    color: var(--menu-color);
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--menu-color);
+    border-width: 2px;
+    font-family: 'Barlow Condensed';
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.bottom-page button:hover {
+    background-color: var(--menu-color);
+    color: white;
+    transition: background 500ms, color 500ms;
 }
