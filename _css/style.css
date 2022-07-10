@@ -333,7 +333,7 @@
 /* ESTILO DO BAIXO DA PÁGINA */
 .bottom-page {
     width: fill;
-    height: 1300px;
+    height: 1100px;
     margin-left: 50px;
 }
 .bottom-page h1.bottom-title {
@@ -465,6 +465,73 @@
     cursor: pointer;
 }
 .bottom-page button:hover {
+    background-color: var(--menu-color);
+    color: white;
+    transition: background 500ms, color 500ms;
+}
+
+.novidades {
+    width: fill;
+    height: fill;
+    margin: auto -8px;
+    background: linear-gradient(var(--secu-color), var(--main-color), #db6821);
+}
+.novidades h1.title {
+    font-family: 'Barlow Condensed';
+    color: var(--menu-color);
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 50px;
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+.novidades div.separador {
+    width: 190px;
+    height: 8px;
+    margin: 0px 0px 50px 50px;
+    background-color: var(--menu-color);
+}
+.novidades div.novidades-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.novidades div.news {
+    width: 30%;
+    height: 500px;
+    margin: 0px 10px;
+}
+.novidades img {
+    width: 387px;
+    height: 250px;
+}
+.novidades h1 {
+    font-family: 'Barlow Condensed';
+    font-size: 35px;
+    color: white;
+}
+.novidades h2 {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: bolder;
+    color: var(--menu-color);
+}
+.novidades button {
+    width: 165px;
+    height: 30px;
+    color: var(--menu-color);
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--menu-color);
+    border-width: 2px;
+    font-family: 'Barlow Condensed';
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.novidades button:hover {
     background-color: var(--menu-color);
     color: white;
     transition: background 500ms, color 500ms;
