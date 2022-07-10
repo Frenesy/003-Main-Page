@@ -12,6 +12,47 @@
     padding: 0px;
     box-sizing: border-box;
 }
+footer {
+    display: flex;
+    width: fill;
+    margin: 10px -8px -8px -8px;
+    height: 300px;
+    background-color: var(--menu-color);
+}
+footer div {
+    width: 30%;
+}
+footer img {
+    margin-top: 180px;
+    margin-left: 50px;
+    width: 199px;
+    height: 41px;
+}
+footer h3 {
+    font-family: 'Roboto';
+    font-size: 13px;
+    color: white;
+    margin: 50px 0px 30px 50px;
+}
+footer div.separador {
+    width: 100px;
+    height: 5px;
+    margin: 0px 0px 50px 45px;
+    background-color: var(--secu-color);
+}
+footer h3.phone {
+    color: var(--secu-color);
+    font-weight: bolder;
+}
+
+.end-site {
+    clear: none;
+    width: fill;
+    height: 10px;
+    background-color: var(--secu-color);
+    margin: -8px -8px;
+}
+
 .background-main-top {
     position: absolute;
     top: 0px;
@@ -377,8 +418,7 @@
 .bottom-page div.hover-2 {
     opacity: 0;
     position: absolute;
-    right: 14px;
-    margin: 0px;
+    margin: 0px 0px 0px 638px;
     width: 600px;
     height: 300px;
     cursor: pointer;
@@ -470,13 +510,14 @@
     transition: background 500ms, color 500ms;
 }
 
-.novidades {
+.page-novidades {
     width: fill;
     height: fill;
     margin: auto -8px;
     background: linear-gradient(var(--secu-color), var(--main-color), #db6821);
+    padding-bottom: 60px;
 }
-.novidades h1.title {
+.page-novidades h1.title {
     font-family: 'Barlow Condensed';
     color: var(--menu-color);
     font-size: 50px;
@@ -485,38 +526,44 @@
     padding-top: 100px;
     margin-bottom: 20px;
 }
-.novidades div.separador {
+.page-novidades div.separador {
     width: 190px;
     height: 8px;
     margin: 0px 0px 50px 50px;
     background-color: var(--menu-color);
 }
-.novidades div.novidades-box {
+.page-novidades div.novidades-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.novidades div.news {
+.page-novidades div.news {
     width: 30%;
     height: 500px;
     margin: 0px 10px;
+    overflow: hidden;
 }
-.novidades img {
+.page-novidades img {
     width: 387px;
     height: 250px;
+    transition: all 5s;
 }
-.novidades h1 {
+.page-novidades img:hover {
+    transform: scale(1.1);
+}
+.page-novidades h1 {
     font-family: 'Barlow Condensed';
     font-size: 35px;
     color: white;
+    height: 100px;
 }
-.novidades h2 {
+.page-novidades h2 {
     font-family: 'Roboto';
     font-size: 15px;
     font-weight: bolder;
     color: var(--menu-color);
 }
-.novidades button {
+.page-novidades button {
     width: 165px;
     height: 30px;
     color: var(--menu-color);
@@ -528,10 +575,10 @@
     font-size: 15px;
     font-weight: 800;
     letter-spacing: 5px;
-    margin-top: 35px;
+    margin-top: 10px;
     cursor: pointer;
 }
-.novidades button:hover {
+.page-novidades button:hover {
     background-color: var(--menu-color);
     color: white;
     transition: background 500ms, color 500ms;
