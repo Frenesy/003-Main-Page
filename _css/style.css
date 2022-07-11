@@ -7,6 +7,18 @@
     --secu-color: #F46F1D;
     --menu-color: #004B5B;
 }
+@media screen and (max-width: 1100px) {
+    .cabecalho section.social-media {
+        display: none;
+    }
+    .social-media div {
+        display: none;
+    }
+    .cabecalho div.main-menu {
+        display: none;
+    }
+}
+
 * {
     border: none;
     padding: 0px;
@@ -60,7 +72,7 @@ footer h3.phone {
     right: 0px;
     width: fill;
     height: 1000px;
-    background: url("../_img/fundo-topo-2.png") no-repeat scroll -350px -70px;
+    background: url("../_img/fundo-topo-2.png") no-repeat;
     z-index: -1;
 }
 
@@ -75,16 +87,21 @@ footer h3.phone {
     border-width: 5px 0px 0px 0px;
     border-color: var(--main-color);
 }
-.logo-site {
-    margin-left: 56px;
-    margin-right: 200px;
+.cabecalho section.logo-site {
+    width: 30%;
+    padding-left: 20px;
+    padding-top: 18pt;
+}
+.cabecalho div.main-menu {
+    width: 50%;
+    padding-left: 20px;
     padding-top: 18pt;
 }
 
-.main-menu {
+.main-menu ul {
     display: flex;
-    align-items: center;
-    width: 700px;
+    list-style: none;
+    flex-direction: row;
 }
 .main-menu a {
     text-decoration: none;
@@ -116,12 +133,13 @@ footer h3.phone {
     border-color: var(--main-color);
 }
 
-.social-media {
+.cabecalho section.social-media {
     display: flex;
-    width: 100px;
     align-items: center;
     justify-content: center;
+    width: 20%;
 }
+
 .social-media div {
     width: 30px;
     height: 30px;
@@ -215,7 +233,7 @@ footer h3.phone {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 28%;
+    width: 400px;
     height: fill;
     background-color: var(--secu-color);
 }
@@ -223,7 +241,7 @@ footer h3.phone {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 28%;
+    width: 400px;
     height: fill;
     margin-left: 30px;
     background-color: var(--secu-color);
@@ -232,7 +250,7 @@ footer h3.phone {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 28%;
+    width: 400px;
     height: fill;
     margin-left: 30px;
     background-color: var(--secu-color);
